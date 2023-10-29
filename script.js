@@ -1,12 +1,12 @@
-const IputNote = document.querySelector(".note")
-const ButtonFind = document.querySelector(".find-out")
+const IputNote = document.querySelector(".note");
+const ButtonFind = document.querySelector(".find-out");
 
-function FindOutNote(){
-  const InpupValue = document.querySelector(".note").value
-  
+function FindOutNote() {
+  const InpupValue = document.querySelector(".note").value;
+
   const MediaDosAlunos = InpupValue;
   const MediaAprovação = 70;
-  
+
   if (MediaDosAlunos == MediaAprovação) {
     alert("Parabéns, foi aprovado");
   } else if (MediaDosAlunos > 70 && MediaDosAlunos <= 80) {
@@ -17,9 +17,9 @@ function FindOutNote(){
     alert("Maravilhoso, és um dos melhores");
   } else if (MediaDosAlunos == 100) {
     alert("Você é demais, conseguiu a nota máxima!");
-  } else if (MediaDosAlunos < 70 && MediaDosAlunos >=51) {
+  } else if (MediaDosAlunos < 70 && MediaDosAlunos >= 51) {
     alert("Infelizmente você foi reprovado");
-  } else if (MediaDosAlunos >= 0 && MediaDosAlunos <=50){
-    alert('Mais sorte da próxima vez, sei que consegue ser melhor')
+  } else if (MediaDosAlunos >= 0 && MediaDosAlunos <= 50) {
+    alert("Mais sorte da próxima vez, sei que consegue ser melhor");
   }
 }
