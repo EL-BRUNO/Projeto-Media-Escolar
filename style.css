@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(./assets/escola.jpg);
+    background-position: center center;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 350px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #000060;
+}
+
+input {
+    outline: none;
+    height: 50px;
+    width: 190px;
+    text-align: center;
+    margin: 20px;
+    background: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    padding-left: 5px;
+}
+
+input::placeholder {
+    font-size: 19px;
+    color: #000000;
+}
+
+button {
+    height: 35px;
+    width: 140px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #000077;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+}
+
+button:hover {
+    opacity: .6;
+}
+
+button:active {
+    opacity: .8;
+}
+
+@media screen and (max-width: 750px){
+    div {
+        margin-top: 230px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 920px){
+    div {
+        margin-top: 280px;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-left: 60px;
+    }
+}
