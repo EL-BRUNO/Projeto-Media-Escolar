@@ -1,10 +1,10 @@
-const IputNote = document.querySelector(".note");
+const InputNote = document.querySelector(".note");
 const ButtonFind = document.querySelector(".find-out");
 
 function FindOutNote() {
-  const InpupValue = document.querySelector(".note").value;
+  const InputValue = document.querySelector(".note").value;
 
-  const MediaDosAlunos = InpupValue;
+  const MediaDosAlunos = InputValue;
   const MediaAprovação = 70;
 
   if (MediaDosAlunos == MediaAprovação) {
@@ -21,5 +21,8 @@ function FindOutNote() {
     alert("Infelizmente você foi reprovado");
   } else if (MediaDosAlunos >= 0 && MediaDosAlunos <= 50) {
     alert("Mais sorte da próxima vez, sei que consegue ser melhor");
+  } else {
+    InputValue >= 101;
+    alert("Insira um valor entre 0 e 100");
   }
 }
